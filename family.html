@@ -16,18 +16,14 @@
         font-family: "\u200b\u200c\u200d\u2060\ufeff\u2062\u2063\u2064";
         src: url(https://fonts.gstatic.com/s/notosanssc/v26/k3kJo84MPvpLmixcA63oeALZTYKI2w328u6EEQ311OEXBJ21lRUt3VQERiSPJ6EORApz2ylco38S.107.woff2)
           format("woff2");
-        unicode-range: U+200b, U+2103, U+4e18, U+4e27-4e28, U+4e38, U+4e59, U+4e8f, U+4ead, U+4ec7, U+4fe9, U+503a, U+5085, U+5146, U+51af,
-          U+51f8, U+52ab, U+5339, U+535c, U+5378, U+538c, U+5398, U+53f9, U+5415, U+5475, U+54aa, U+54ac, U+54b8, U+5582, U+5760, U+5764,
-          U+57cb, U+5835, U+5885, U+5951, U+5983, U+59da, U+5a77, U+5b5d, U+5b5f, U+5bb5, U+5bc2, U+5be8, U+5bfa, U+5c2c, U+5c34, U+5c41,
-          U+5c48, U+5c65, U+5cad, U+5e06, U+5e42, U+5ef7, U+5f17, U+5f25, U+5f6d, U+5f79, U+6028, U+6064, U+6068, U+606d, U+607c, U+6094,
-          U+6109, U+6124, U+6247, U+626d, U+6291, U+629a, U+62ac, U+62b9, U+62fe, U+6324, U+6349, U+6367, U+6398, U+6495, U+64a4, U+64b0,
-          U+64bc, U+64ce, U+658c, U+65ed, U+6602, U+6674, U+6691, U+66a8, U+674f, U+679a, U+67ef, U+67f4, U+680b, U+6876, U+68a8, U+6a59,
-          U+6a61, U+6b20, U+6bc5, U+6d12, U+6d46, U+6d8c, U+6dc0, U+6e14, U+6e23, U+6f06, U+7164, U+716e, U+7199, U+71e5, U+72ac, U+742a,
-          U+755c, U+75ab, U+75b2, U+75f4, U+7897, U+78b3, U+78c5, U+7978, U+79fd, U+7a74, U+7b4b, U+7b5b, U+7ece, U+7ed2, U+7ee3, U+7ef3,
-          U+7f50, U+7f55, U+7f9e, U+7fe0, U+809d, U+8106, U+814a, U+8154, U+817b, U+818f, U+81c2, U+81ed, U+821f, U+82a6, U+82d1, U+8302,
-          U+83c7, U+845b, U+848b, U+84c9, U+85e4, U+86ee, U+8700, U+8774, U+886c, U+8881, U+8c1c, U+8c79, U+8d2a, U+8d3c, U+8eba, U+8f70,
-          U+8fa9, U+8fb1, U+900a, U+9017, U+901d, U+9022, U+906e, U+946b, U+94dd, U+94ed, U+953b, U+95fa, U+95fd, U+964c, U+96c0, U+971c,
-          U+971e, U+9753, U+9756, U+97e6, U+9881, U+9b4f, U+9e2d, U+9f0e, U+e602, U+e604-e605, U+ff5c;
+        unicode-range: U+200b, U+200c, U+200d, U+2060, U+feff, U+2063, U+2063, U+2064;
+      }
+    </style>
+
+    <style>
+      @font-face {
+        font-family: "\u{1f600}";
+        src: url("./Apple\ Color\ Emoji.ttc");
       }
     </style>
   </head>
@@ -36,12 +32,15 @@
     <div>测试字体：</div>
     <div class="test"></div>
     <div>零宽字符：<span class="zero"></span></div>
+    <div>emoji: <span class="emoji"></span></div>
     <script>
       const te = "\uf8ff";
       document.querySelector(".test").innerHTML = te;
 
       document.querySelector(".zero").innerHTML = "\u200b\u200c\u200d\u2060\ufeff\u2062\u2063\u2064";
       console.log(document.querySelector(".zero").innerHTML.length);
+
+      document.querySelector(".emoji").innerHTML = "\u{1f600}";
     </script>
   </body>
 </html>
