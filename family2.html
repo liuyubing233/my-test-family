@@ -8,27 +8,39 @@
     <style>
       @font-face {
         font-family: "\u200b";
-        src: url(./u200b.eot);
+        src: url("./u200b.ttf") format("truetype");
       }
       @font-face {
         font-family: "\u200c";
-        src: url(./u200c.eot);
+        src: url("./u200c.ttf") format("truetype");
       }
       @font-face {
         font-family: "\u200d";
-        src: url(./u200d.eot);
+        src: url("./u200d.ttf") format("truetype");
       }
       @font-face {
         font-family: "\u2062";
-        src: url(./u2062.eot);
+        src: url("./u2062.ttf") format("truetype");
       }
       @font-face {
         font-family: "\u2063";
-        src: url(./u2063.eot);
+        src: url("./u2063.ttf") format("truetype");
       }
       @font-face {
         font-family: "\u2064";
-        src: url(./u2064.eot);
+        src: url("./u2064.ttf") format("truetype");
+      }
+      /* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+      @font-face {
+        font-family: "\u96f6\u5bbd\u5b57\u7b26";
+        font-weight: 400;
+        src: url("//at.alicdn.com/wf/webfont/WLXS9Y11VXSE/rBrz5t1e3AaE.woff2") format("woff2"),
+          url("//at.alicdn.com/wf/webfont/WLXS9Y11VXSE/ciMYqlKwrrmV.woff") format("woff");
+        font-display: swap;
+      }
+
+      body {
+        font-family: "\u96f6\u5bbd\u5b57\u7b26", "\u200b", "\u200c", "\u200d", "\u2062", "\u2063", "\u2064";
       }
     </style>
   </head>
