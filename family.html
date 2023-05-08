@@ -8,27 +8,43 @@
     <style>
       @font-face {
         font-family: "\u200b";
-        src: local("./u200b.ttf") format("truetype");
+        src: url("./u200b.ttf") format("truetype");
+        unicode-range: U+200b;
       }
       @font-face {
         font-family: "\u200c";
-        src: local("./u200c.ttf") format("truetype");
+        src: url("./u200c.ttf") format("truetype");
+        unicode-range: U+200c;
       }
       @font-face {
         font-family: "\u200d";
-        src: local("./u200d.ttf") format("truetype");
+        src: url("./u200d.ttf") format("truetype");
+        unicode-range: U+200d;
+      }
+      @font-face {
+        font-family: "\u2060";
+        src: url("./u2060.ttf") format("truetype");
+        unicode-range: U+2060;
       }
       @font-face {
         font-family: "\u2062";
-        src: local("./u2062.ttf") format("truetype");
+        src: url("./u2062.ttf") format("truetype");
+        unicode-range: U+2062;
       }
       @font-face {
         font-family: "\u2063";
-        src: local("./u2063.ttf") format("truetype");
+        src: url("./u2063.ttf") format("truetype");
+        unicode-range: U+2063;
       }
       @font-face {
         font-family: "\u2064";
-        src: local("./u2064.ttf") format("truetype");
+        src: url("./u2064.ttf") format("truetype");
+        unicode-range: U+2064;
+      }
+      @font-face {
+        font-family: "\ufeff";
+        src: url("./ufeff.ttf") format("truetype");
+        unicode-range: U+FEFF;
       }
       /* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
       @font-face {
@@ -40,7 +56,7 @@
       }
 
       body {
-        font-family: '\u96f6\u5bbd\u5b57\u7b26', '\u200b', '\u200c', '\u200d', '\u2062', '\u2063', '\u2064';
+        font-family: "\u96f6\u5bbd\u5b57\u7b26", "\u200b", "\u200c", "\u200d", "\u2062", "\u2063", "\u2064", "\u2060", "\ufeff";
       }
     </style>
   </head>
