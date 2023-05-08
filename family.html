@@ -18,9 +18,6 @@
     <div>零宽字符：<span class="zero"></span></div>
     <div>脱敏测试: <span class="emoji"></span></div>
     <script>
-      const te = "\uf8ff";
-      document.querySelector(".test").innerHTML = te;
-
       document.querySelector(".zero").innerHTML = "\u200b\u200c\u200d\u2060\ufeff\u2062\u2063\u2064";
       console.log(document.querySelector(".zero").innerHTML.length);
 
