@@ -64,23 +64,11 @@
   <body>
     <div>零宽字符：<span class="zero"></span></div>
     <div>脱敏测试: <span class="emoji"></span></div>
-    <div class="zz" style="white-space: pre;"></div>
+    <div class="zz" style="white-space: pre"></div>
     <script>
-      const SYMBOL_REPLACE_OBJECT = {
-        0: "\u200b",
-        1: "\u200c",
-        2: "\u200d",
-        3: "\u2060",
-        4: "\ufeff",
-        5: "\u2062",
-        6: "\u2063",
-        7: "\u2064",
-      };
-
       document.querySelector(".zero").innerHTML = "\u200b\u200c\u200d\u2060\ufeff\u2062\u2063\u2064";
-      document.querySelector(".zz").innerHTML = Object.keys(SYMBOL_REPLACE_OBJECT)
-        .map((i) => `${i}: ${SYMBOL_REPLACE_OBJECT[i]} \n`)
-        .join("");
+      document.querySelector(".zz").innerHTML =
+        "0: \u200b \n1: \u200c \n2: \u200d \n3: \u2060 \n4: \ufeff \n5: \u2062 \n6: \u2063 \n7: \u2064";
 
       console.log(document.querySelector(".zero").innerHTML.length);
 
